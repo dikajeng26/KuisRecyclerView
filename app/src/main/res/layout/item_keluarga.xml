@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@android:color/holo_blue_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/img_data"
+            android:layout_width="74dp"
+            android:layout_height="66dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_data"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/img_data"
+            android:background="#004D1F1F"
+            android:textColor="#070000"
+            android:textSize="20sp"
+            tools:text="nama" />
+
+        <TextView
+            android:id="@+id/tv_nim"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nama"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_data"
+            android:textColor="#F0E4E4"
+            android:textSize="16dp"
+            tools:text="nim" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
